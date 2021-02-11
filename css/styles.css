@@ -3,11 +3,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Spartan', sans-serif;  
-    background: rgb(43,60,78);
-    background: linear-gradient(90deg, rgba(43,60,78,1) 49%, rgba(34,48,63,1) 100%, rgba(0,212,255,1) 100%);
-    color: white;   
 }
-
 
 body {
     
@@ -139,6 +135,3 @@ select:focus {
         margin: 0 auto;
     }
 }
-
-
-
