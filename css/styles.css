@@ -3,16 +3,21 @@
 * {
     box-sizing: border-box;
     font-family: 'Spartan', sans-serif;  
+    color: white
+    
 }
 
 body {
-    
+    background: rgb(43,60,78);
+    background: linear-gradient(90deg, rgba(43,60,78,1) 50%, rgba(34,48,63,1) 100%);
 }
 h1 {
     color: white;
     font-size: 20px;
-    padding: 20px;
-    background-color: #2d3945;
+    padding: 30px;
+    background: rgb(106,139,138);
+    background: linear-gradient(90deg, rgba(106,139,138,1) 50%, rgba(34,48,63,1) 100%);
+    margin-top: 0;
 }
 legend {
  font-size: 1.1em;
@@ -20,7 +25,7 @@ legend {
  padding-top: 20px;
 }
 main {
-    background-color:  white;
+
     border-radius: 5%;
 }
 
@@ -42,8 +47,8 @@ fieldset {
 .contact select,
 .contact option {
     padding: 20px;
-    background-color: #eff0f1;
-    border: 0;
+    background-color: transparent;
+    border: 5px solid darkcyan;
     display: block;
     width: 100%;
 }
@@ -66,7 +71,7 @@ header {
     margin-top: 0;
 }
 .header-info {
-    background-color: white;
+  
     padding: 20px
 }
 
@@ -80,8 +85,8 @@ textarea {
     padding-bottom: 50px;
     margin-bottom: 20px;
     margin-top: 20px;
-    background-color: #eff0f1;
-    border: 0;
+    background-color: transparent;
+    border: solid 5px darkcyan;
 }
 
 fieldset .newsletter {
@@ -113,7 +118,6 @@ button {
 }
 
 footer {
-    background-color: white;
     margin: 0;
     padding: 20px 20px 150px 20px;
 }
@@ -121,10 +125,13 @@ footer {
 input:focus,
 textarea:focus,
 select:focus {
-    outline:  solid 2px #2d3945;
-    background-color:darkturquoise;
+    background:#676470;
+    transition:all 0.5s ease;
 }
 
+::placeholder {
+    color: white
+}
 
 
 /* ---------- Media Query----------- */
