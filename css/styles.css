@@ -1,17 +1,18 @@
 /* ---------- Base Styles------------ */
 
-*{
+* {
     box-sizing: border-box;
     font-family: 'Spartan', sans-serif;  
 }
 
 body {
-    background-color: #2d3945;
+    
 }
 h1 {
     color: white;
     font-size: 20px;
     padding: 20px;
+    background-color: #2d3945;
 }
 legend {
  font-size: 1.1em;
@@ -20,6 +21,7 @@ legend {
 }
 main {
     background-color:  white;
+    border-radius: 5%;
 }
 
 header,
@@ -60,7 +62,6 @@ fieldset {
 
 
 header {
-    background-color: #2d3945;
     border-radius: 0;
     margin-top: 0;
 }
@@ -117,4 +118,20 @@ footer {
     padding: 20px 20px 150px 20px;
 }
 
+input:focus,
+textarea:focus,
+select:focus {
+    outline:  solid 2px #2d3945;
+    background-color:darkturquoise;
+}
 
+
+
+/* ---------- Media Query----------- */
+
+@media (min-width: 768px) {
+    main {
+        max-width: 50%;
+        margin: 0 auto;
+    }
+}
