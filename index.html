@@ -30,16 +30,16 @@
 
                 <div class="form-item">
                 <label for="name">Fullname</label>
-                <input type="text" id="name" name="user-name" required>
+                <input type="text" id="name" name="user-name" placeholder="Required" required>
                 </div>
 
                 <div class="form-item">
                 <label for="email">Email Address</label>
-                <input type="email" id="email" name="user-email" required>
+                <input type="email" id="email" name="user-email" placeholder="Required" required>
                 </div>
 
                 <div class="form-item">
-                <label for="phone">Phone</label>
+                <label for="phone">Phone Number</label>
                 <input type="tel" id="phone" name="user-phone">
                 </div>
 
@@ -54,7 +54,7 @@
                 </div>
 
                 <div class="form-item">
-                    <label for="State">State</label>
+                    <label for="state">State</label>
                     <select name="user-state" id="state">
                     <option value="" disabled selected>Choose State</option>    
                     <option value="AL">Alabama</option>
@@ -113,53 +113,57 @@
 
                 <div class="form-item">
                     <label for="zip">Zip Code</label>
-                    <input type="number" id="zip"  name="user-zip "pattern="[0-9]{5}">
+                    <input type="text" id="zip"  name="user-zip" pattern="[0-9]{5}">
                 </div>
             </fieldset>
-
+            <hr>
             <fieldset class="newsletter">
                 <legend>Newsletter</legend>
                 <p>Select the newsletters you would like ot receive</p>
                 
-                <div>
+                <div class="form-item">
                     <input type="checkbox" id="news1" name="user-news1" value="HTML News">
-                    <label for="vehicle1">HTML News</label><br>
+                    <label for="news1">HTML News</label><br>
                 </div>   
 
-                <div>
+                <div class="form-item">
                     <input type="checkbox" id="news2" name="user-news2" value="CSS News">
-                    <label for="vehicle2">CSS News</label><br>
+                    <label for="news2">CSS News</label><br>
                 </div>
 
-                <div>
+                <div  class="form-item">
                     <input type="checkbox" id="news3" name="user-news3" value="Javascript News">
-                    <label for="vehicle3">Javascript News</label><br>
+                    <label for="news3">Javascript News</label><br>
                 </div>
-
                 <p>Newsletter format</p>
                 <div>
-                    <input type="radio" id="html" name="format" value="html" checked>
-                    <label for="huey">HTML</label>
+                    <input type="radio" id="html" name="format" value="html" class="form-item" checked>
+                    <label for="html">HTML</label>
                 </div>
 
                 <div>
-                    <input type="radio" id="plain-text" name="format" value="plain-text">
-                    <label for="dewey">Plain text</label>
+                    <input type="radio" id="plain-text" name="format" value="plain-text"  class="form-item">
+                    <label for="plain-text">Plain text</label>
                 </div>
 
                 <div class="textarea">
-                    <label for="comments">Other topics you'd like to hear about</label>
+                    <label for="comment">Other topics you'd like to hear about</label>
                     <textarea id="comment" name="user-comment"></textarea>
-
                 </div>
 
-                <div>
+                <div class="btn">
                     <button>Sign Up</button>
                 </div>
-
+                
             </fieldset>
         </form>
     </main>
+
+
+    <footer>
+        <p class="center"><i>Copyright The Code Review</i></p> 
+    </footer>
+
     
 </body>
 </html>

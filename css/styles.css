@@ -2,7 +2,7 @@
 
 *{
     box-sizing: border-box;
-    font-family: 'Spartan', sans-serif;   
+    font-family: 'Spartan', sans-serif;  
 }
 
 body {
@@ -10,23 +10,32 @@ body {
 }
 h1 {
     color: white;
+    font-size: 20px;
+    padding: 20px;
 }
 legend {
  font-size: 1.1em;
  font-weight: bold;
+ padding-top: 20px;
 }
 main {
     background-color:  white;
 }
 
+header,
+.center,
+.btn {
+    text-align: center;
+}
 
 fieldset {
     border: 0;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
-/* ---------- Main Layout------------ */
+/* ---------- Main Layout & Styling------------ */
 .contact input,
 .contact select,
 .contact option {
@@ -37,23 +46,75 @@ fieldset {
     width: 100%;
 }
 
+#zip {
+    width: 50%;
+}
+
+::-webkit-input-placeholder {
+    text-align: right;
+  }
+  
+  :-moz-placeholder {
+    text-align: right;
+  }
+
 
 header {
-    text-align: center;
     background-color: #2d3945;
     border-radius: 0;
     margin-top: 0;
 }
-
 .header-info {
     background-color: white;
     padding: 20px
 }
 
-hr {
-    margin-bottom: 5px;
+.textarea {
+    display: flex; 
+    flex-direction: column;
 }
 
+textarea {
+    flex: 1;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: #eff0f1;
+    border: 0;
+}
 
+fieldset .newsletter {
+    border-top: solid #2d3945;
+
+}
+hr {
+    margin-bottom: 5px;
+    border: solid 1px #2d3945;
+}
+
+.btn {
+    display: flex;
+}
+button {
+    background-color: #4ebbb5;
+    color: white;
+    padding: 20px;
+    flex: 1;
+}
+
+.form-item {
+    margin-bottom: 20px;
+}
+
+.textarea {
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+footer {
+    background-color: white;
+    margin: 0;
+    padding: 20px 20px 150px 20px;
+}
 
 
