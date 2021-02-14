@@ -135,7 +135,10 @@ option,
 select {
     font-size:24px;
     font-weight: bold;
+    background:#676470;
+    transition:all 0.5s ease;
 }
+
 ::placeholder {
     color: white
 }
@@ -148,4 +151,26 @@ select {
         max-width: 50%;
         margin: 0 auto;
     }
+    .form-item {
+        display: flex;
+        flex-direction: row;
+    }
+    label {
+        width: 25%;
+        margin: auto 0;
+    }
+    legend {
+        margin-bottom: 20px;
+    }
+    .zip label{
+        width: 20%;
+    }
+
+    .news input,
+    .news label
+    {
+        margin-top: 15px;
+        margin-right: 10px;
+    }
+
 }
